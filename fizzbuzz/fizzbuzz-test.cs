@@ -10,7 +10,6 @@ namespace fizzbuzz
         {
             var result = new fizzbuzz().check(3);
             Assert.Equal("fizz", result);
-
         }
 
         [Fact]
@@ -18,19 +17,14 @@ namespace fizzbuzz
         {
             var result = new fizzbuzz().check(1);
             Assert.Equal("1", result);
-
         }
 
         [Fact]
-        public void given2return2()
+        public void divisibleby5()
         {
-            var result = new fizzbuzz().check(2);
-            Assert.Equal("2", result);
+            var result = new fizzbuzz().divide5(5);
+            Assert.Equal("buzz", result);
 
         }
-
-
-
-
     }
 }

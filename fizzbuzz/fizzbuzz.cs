@@ -18,6 +18,14 @@ namespace fizzbuzz
             return $"{number}";
         }
 
+        public string divide5(int number)
+        {
+            if (number % 5 == 0)
+            {
+                return "buzz";
+            }
 
+            return $"{number}";
+        }
     }
 }
