@@ -6,9 +6,21 @@ namespace fizzbuzz
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void divisibleBy3ReturnFizz()
         {
+            var result = new fizzbuzz().check(3);
+            Assert.Equal("fizz", result);
 
         }
+
+        [Fact]
+        public void given1return1()
+        {
+            var result = new fizzbuzz().check(1);
+            Assert.Equal("1", result);
+
+        }
+
+
     }
 }
