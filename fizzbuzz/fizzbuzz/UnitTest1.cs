@@ -21,6 +21,16 @@ namespace fizzbuzz
 
         }
 
+        [Fact]
+        public void given2return2()
+        {
+            var result = new fizzbuzz().check(2);
+            Assert.Equal("2", result);
+
+        }
+
+
+
 
     }
 }
