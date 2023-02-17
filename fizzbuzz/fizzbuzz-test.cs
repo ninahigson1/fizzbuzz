@@ -5,26 +5,19 @@ namespace fizzbuzz
 {
     public class UnitTest1
     {
-        [Fact]
-        public void divisibleBy3ReturnFizz()
-        {
-            var result = new fizzbuzz().check(3);
-            Assert.Equal("fizz", result);
-        }
+       
+       
+        [Theory]
+        [InlineData(3, "fizz")]
 
-        [Fact]
-        public void given1return1()
-        {
-            var result = new fizzbuzz().check(1);
-            Assert.Equal("1", result);
-        }
+        [InlineData(1, "1")]
 
-        [Fact]
-        public void divisibleby5()
-        {
-            var result = new fizzbuzz().divide5(5);
-            Assert.Equal("buzz", result);
+        [InlineData(5, "buzz")]
 
+        public void fizztests(int input, string expected)
+        {
+            var result = new fizzbuzz().check(input);
+            Assert.Equal(expected, result);
         }
     }
 }
